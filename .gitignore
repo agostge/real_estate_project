@@ -1,0 +1,14 @@
+# does not ignore the README.md file
+!README.md
+!.gitignore
+
+real_estate/AirflowLogo.png
+
+real_estate/real_estate_project/target/
+real_estate/real_estate_project/dbt_packages/
+real_estate/real_estate_project/logs/
+# virtual environment
+real_estate/real_estate_env/
+
+real_estate/config/
+real_estate/utils/constants.py
