@@ -10,5 +10,8 @@ real_estate/real_estate_project/logs/
 # virtual environment
 real_estate/real_estate_env/
 
+__pycache__/
+.vscode/
+
 real_estate/config/
 real_estate/utils/constants.py
