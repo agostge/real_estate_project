@@ -1,0 +1,646 @@
+version: 2
+
+models:
+  - name: stg_ker_1_listings
+    description: "Real estate listings data for District 1 in Budapest"
+    columns:
+      - name: identifier
+        description: "Unique identifier for the listing"
+        tests:
+          - unique
+          - not_null
+      - name: room
+        description: "Number of rooms in the property"
+      - name: area
+        description: "Size of the property in square meters"
+      - name: price
+        description: "Price of the property"
+      - name: district
+        description: "District number (Kerület)"
+        tests:
+          - not_null
+          - accepted_values:
+              values: [1]
+      - name: date_updated
+        description: "Date the listing was last updated"
+      - name: is_active
+        description: "Whether property is active or removed"
+        tests:
+          - accepted_values:
+              values: ["Active", "Inactive"]
+
+  - name: stg_ker_2_listings
+    description: "Real estate listings data for District 2 in Budapest"
+    columns:
+      - name: identifier
+        description: "Unique identifier for the listing"
+        tests:
+          - unique
+          - not_null
+      - name: room
+        description: "Number of rooms in the property"
+      - name: area
+        description: "Size of the property in square meters"
+      - name: price
+        description: "Price of the property"
+      - name: district
+        description: "District number (Kerület)"
+        tests:
+          - not_null
+          - accepted_values:
+              values: [2]
+      - name: date_updated
+        description: "Date the listing was last updated"
+      - name: is_active
+        description: "Whether property is active or removed"
+        tests:
+          - accepted_values:
+              values: ["Active", "Inactive"]
+
+  - name: stg_ker_3_listings
+    description: "Real estate listings data for District 3 in Budapest"
+    columns:
+      - name: identifier
+        description: "Unique identifier for the listing"
+        tests:
+          - unique
+          - not_null
+      - name: room
+        description: "Number of rooms in the property"
+      - name: area
+        description: "Size of the property in square meters"
+      - name: price
+        description: "Price of the property"
+      - name: district
+        description: "District number (Kerület)"
+        tests:
+          - not_null
+          - accepted_values:
+              values: [3]
+      - name: date_updated
+        description: "Date the listing was last updated"
+      - name: is_active
+        description: "Whether property is active or removed"
+        tests:
+          - accepted_values:
+              values: ["Active", "Inactive"]
+
+  - name: stg_ker_4_listings
+    description: "Real estate listings data for District 4 in Budapest"
+    columns:
+      - name: identifier
+        description: "Unique identifier for the listing"
+        tests:
+          - unique
+          - not_null
+      - name: room
+        description: "Number of rooms in the property"
+      - name: area
+        description: "Size of the property in square meters"
+      - name: price
+        description: "Price of the property"
+      - name: district
+        description: "District number (Kerület)"
+        tests:
+          - not_null
+          - accepted_values:
+              values: [4]
+      - name: date_updated
+        description: "Date the listing was last updated"
+      - name: is_active
+        description: "Whether property is active or removed"
+        tests:
+          - accepted_values:
+              values: ["Active", "Inactive"]   
+
+  - name: stg_ker_5_listings
+    description: "Real estate listings data for District 5 in Budapest"
+    columns:
+      - name: identifier
+        description: "Unique identifier for the listing"
+        tests:
+          - unique
+          - not_null
+      - name: room
+        description: "Number of rooms in the property"
+      - name: area
+        description: "Size of the property in square meters"
+      - name: price
+        description: "Price of the property"
+      - name: district
+        description: "District number (Kerület)"
+        tests:
+          - not_null
+          - accepted_values:
+              values: [5]  
+      - name: date_updated
+        description: "Date the listing was last updated"
+      - name: is_active
+        description: "Whether property is active or removed"
+        tests:
+          - accepted_values:
+              values: ["Active", "Inactive"] 
+
+  - name: stg_ker_6_listings
+    description: "Real estate listings data for District 6 in Budapest"
+    columns:
+      - name: identifier
+        description: "Unique identifier for the listing"
+        tests:
+          - unique
+          - not_null
+      - name: room
+        description: "Number of rooms in the property"
+      - name: area
+        description: "Size of the property in square meters"
+      - name: price
+        description: "Price of the property"
+      - name: district
+        description: "District number (Kerület)"
+        tests:
+          - not_null
+          - accepted_values:
+              values: [6]  
+      - name: date_updated
+        description: "Date the listing was last updated"
+      - name: is_active
+        description: "Whether property is active or removed"
+        tests:
+          - accepted_values:
+              values: ["Active", "Inactive"] 
+
+  - name: stg_ker_7_listings
+    description: "Real estate listings data for District 7 in Budapest"
+    columns:
+      - name: identifier
+        description: "Unique identifier for the listing"
+        tests:
+          - unique
+          - not_null
+      - name: room
+        description: "Number of rooms in the property"
+      - name: area
+        description: "Size of the property in square meters"
+      - name: price
+        description: "Price of the property"
+      - name: district
+        description: "District number (Kerület)"
+        tests:
+          - not_null
+          - accepted_values:
+              values: [7]  
+      - name: date_updated
+        description: "Date the listing was last updated"
+      - name: is_active
+        description: "Whether property is active or removed"
+        tests:
+          - accepted_values:
+              values: ["Active", "Inactive"] 
+
+  - name: stg_ker_8_listings
+    description: "Real estate listings data for District 8 in Budapest"
+    columns:
+      - name: identifier
+        description: "Unique identifier for the listing"
+        tests:
+          - unique
+          - not_null
+      - name: room
+        description: "Number of rooms in the property"
+      - name: area
+        description: "Size of the property in square meters"
+      - name: price
+        description: "Price of the property"
+      - name: district
+        description: "District number (Kerület)"
+        tests:
+          - not_null
+          - accepted_values:
+              values: [8] 
+      - name: date_updated
+        description: "Date the listing was last updated"
+      - name: is_active
+        description: "Whether property is active or removed"
+        tests:
+          - accepted_values:
+              values: ["Active", "Inactive"]
+
+  - name: stg_ker_9_listings
+    description: "Real estate listings data for District 9 in Budapest"
+    columns:
+      - name: identifier
+        description: "Unique identifier for the listing"
+        tests:
+          - unique
+          - not_null
+      - name: room
+        description: "Number of rooms in the property"
+      - name: area
+        description: "Size of the property in square meters"
+      - name: price
+        description: "Price of the property"
+      - name: district
+        description: "District number (Kerület)"
+        tests:
+          - not_null
+          - accepted_values:
+              values: [9]  
+      - name: date_updated
+        description: "Date the listing was last updated"
+      - name: is_active
+        description: "Whether property is active or removed"
+        tests:
+          - accepted_values:
+              values: ["Active", "Inactive"]  
+
+  - name: stg_ker_10_listings
+    description: "Real estate listings data for District 10 in Budapest"
+    columns:
+      - name: identifier
+        description: "Unique identifier for the listing"
+        tests:
+          - unique
+          - not_null
+      - name: room
+        description: "Number of rooms in the property"
+      - name: area
+        description: "Size of the property in square meters"
+      - name: price
+        description: "Price of the property"
+      - name: district
+        description: "District number (Kerület)"
+        tests:
+          - not_null
+          - accepted_values:
+              values: [10] 
+      - name: date_updated
+        description: "Date the listing was last updated"
+      - name: is_active
+        description: "Whether property is active or removed"
+        tests:
+          - accepted_values:
+              values: ["Active", "Inactive"] 
+
+  - name: stg_ker_11_listings
+    description: "Real estate listings data for District 11 in Budapest"
+    columns:
+      - name: identifier
+        description: "Unique identifier for the listing"
+        tests:
+          - unique
+          - not_null
+      - name: room
+        description: "Number of rooms in the property"
+      - name: area
+        description: "Size of the property in square meters"
+      - name: price
+        description: "Price of the property"
+      - name: district
+        description: "District number (Kerület)"
+        tests:
+          - not_null
+          - accepted_values:
+              values: [11]
+      - name: date_updated
+        description: "Date the listing was last updated"
+      - name: is_active
+        description: "Whether property is active or removed"
+        tests:
+          - accepted_values:
+              values: ["Active", "Inactive"]
+
+  - name: stg_ker_12_listings
+    description: "Real estate listings data for District 12 in Budapest"
+    columns:
+      - name: identifier
+        description: "Unique identifier for the listing"
+        tests:
+          - unique
+          - not_null
+      - name: room
+        description: "Number of rooms in the property"
+      - name: area
+        description: "Size of the property in square meters"
+      - name: price
+        description: "Price of the property"
+      - name: district
+        description: "District number (Kerület)"
+        tests:
+          - not_null
+          - accepted_values:
+              values: [12]
+      - name: date_updated
+        description: "Date the listing was last updated"
+      - name: is_active
+        description: "Whether property is active or removed"
+        tests:
+          - accepted_values:
+              values: ["Active", "Inactive"]
+
+  - name: stg_ker_13_listings
+    description: "Real estate listings data for District 13 in Budapest"
+    columns:
+      - name: identifier
+        description: "Unique identifier for the listing"
+        tests:
+          - unique
+          - not_null
+      - name: room
+        description: "Number of rooms in the property"
+      - name: area
+        description: "Size of the property in square meters"
+      - name: price
+        description: "Price of the property"
+      - name: district
+        description: "District number (Kerület)"
+        tests:
+          - not_null
+          - accepted_values:
+              values: [13]
+      - name: date_updated
+        description: "Date the listing was last updated"
+      - name: is_active
+        description: "Whether property is active or removed"
+        tests:
+          - accepted_values:
+              values: ["Active", "Inactive"]
+
+  - name: stg_ker_14_listings
+    description: "Real estate listings data for District 14 in Budapest"
+    columns:
+      - name: identifier
+        description: "Unique identifier for the listing"
+        tests:
+          - unique
+          - not_null
+      - name: room
+        description: "Number of rooms in the property"
+      - name: area
+        description: "Size of the property in square meters"
+      - name: price
+        description: "Price of the property"
+      - name: district
+        description: "District number (Kerület)"
+        tests:
+          - not_null
+          - accepted_values:
+              values: [14]
+      - name: date_updated
+        description: "Date the listing was last updated"
+      - name: is_active
+        description: "Whether property is active or removed"
+        tests:
+          - accepted_values:
+              values: ["Active", "Inactive"]   
+
+  - name: stg_ker_15_listings
+    description: "Real estate listings data for District 15 in Budapest"
+    columns:
+      - name: identifier
+        description: "Unique identifier for the listing"
+        tests:
+          - unique
+          - not_null
+      - name: room
+        description: "Number of rooms in the property"
+      - name: area
+        description: "Size of the property in square meters"
+      - name: price
+        description: "Price of the property"
+      - name: district
+        description: "District number (Kerület)"
+        tests:
+          - not_null
+          - accepted_values:
+              values: [15]  
+      - name: date_updated
+        description: "Date the listing was last updated"
+      - name: is_active
+        description: "Whether property is active or removed"
+        tests:
+          - accepted_values:
+              values: ["Active", "Inactive"] 
+
+  - name: stg_ker_16_listings
+    description: "Real estate listings data for District 16 in Budapest"
+    columns:
+      - name: identifier
+        description: "Unique identifier for the listing"
+        tests:
+          - unique
+          - not_null
+      - name: room
+        description: "Number of rooms in the property"
+      - name: area
+        description: "Size of the property in square meters"
+      - name: price
+        description: "Price of the property"
+      - name: district
+        description: "District number (Kerület)"
+        tests:
+          - not_null
+          - accepted_values:
+              values: [16]   
+      - name: date_updated
+        description: "Date the listing was last updated"
+      - name: is_active
+        description: "Whether property is active or removed"
+        tests:
+          - accepted_values:
+              values: ["Active", "Inactive"]
+
+  - name: stg_ker_17_listings
+    description: "Real estate listings data for District 17 in Budapest"
+    columns:
+      - name: identifier
+        description: "Unique identifier for the listing"
+        tests:
+          - unique
+          - not_null
+      - name: room
+        description: "Number of rooms in the property"
+      - name: area
+        description: "Size of the property in square meters"
+      - name: price
+        description: "Price of the property"
+      - name: district
+        description: "District number (Kerület)"
+        tests:
+          - not_null
+          - accepted_values:
+              values: [17]  
+      - name: date_updated
+        description: "Date the listing was last updated"
+      - name: is_active
+        description: "Whether property is active or removed"
+        tests:
+          - accepted_values:
+              values: ["Active", "Inactive"] 
+
+  - name: stg_ker_18_listings
+    description: "Real estate listings data for District 18 in Budapest"
+    columns:
+      - name: identifier
+        description: "Unique identifier for the listing"
+        tests:
+          - unique
+          - not_null
+      - name: room
+        description: "Number of rooms in the property"
+      - name: area
+        description: "Size of the property in square meters"
+      - name: price
+        description: "Price of the property"
+      - name: district
+        description: "District number (Kerület)"
+        tests:
+          - not_null
+          - accepted_values:
+              values: [18] 
+      - name: date_updated
+        description: "Date the listing was last updated"
+      - name: is_active
+        description: "Whether property is active or removed"
+        tests:
+          - accepted_values:
+              values: ["Active", "Inactive"]
+
+  - name: stg_ker_19_listings
+    description: "Real estate listings data for District 19 in Budapest"
+    columns:
+      - name: identifier
+        description: "Unique identifier for the listing"
+        tests:
+          - unique
+          - not_null
+      - name: room
+        description: "Number of rooms in the property"
+      - name: area
+        description: "Size of the property in square meters"
+      - name: price
+        description: "Price of the property"
+      - name: district
+        description: "District number (Kerület)"
+        tests:
+          - not_null
+          - accepted_values:
+              values: [19]  
+      - name: date_updated
+        description: "Date the listing was last updated"
+      - name: is_active
+        description: "Whether property is active or removed"
+        tests:
+          - accepted_values:
+              values: ["Active", "Inactive"]  
+
+  - name: stg_ker_20_listings
+    description: "Real estate listings data for District 20 in Budapest"
+    columns:
+      - name: identifier
+        description: "Unique identifier for the listing"
+        tests:
+          - unique
+          - not_null
+      - name: room
+        description: "Number of rooms in the property"
+      - name: area
+        description: "Size of the property in square meters"
+      - name: price
+        description: "Price of the property"
+      - name: district
+        description: "District number (Kerület)"
+        tests:
+          - not_null
+          - accepted_values:
+              values: [20]  
+      - name: date_updated
+        description: "Date the listing was last updated"
+      - name: is_active
+        description: "Whether property is active or removed"
+        tests:
+          - accepted_values:
+              values: ["Active", "Inactive"]    
+
+  - name: stg_ker_21_listings
+    description: "Real estate listings data for District 21 in Budapest"
+    columns:
+      - name: identifier
+        description: "Unique identifier for the listing"
+        tests:
+          - unique
+          - not_null
+      - name: room
+        description: "Number of rooms in the property"
+      - name: area
+        description: "Size of the property in square meters"
+      - name: price
+        description: "Price of the property"
+      - name: district
+        description: "District number (Kerület)"
+        tests:
+          - not_null
+          - accepted_values:
+              values: [21]
+      - name: date_updated
+        description: "Date the listing was last updated"
+      - name: is_active
+        description: "Whether property is active or removed"
+        tests:
+          - accepted_values:
+              values: ["Active", "Inactive"]
+
+  - name: stg_ker_22_listings
+    description: "Real estate listings data for District 22 in Budapest"
+    columns:
+      - name: identifier
+        description: "Unique identifier for the listing"
+        tests:
+          - unique
+          - not_null
+      - name: room
+        description: "Number of rooms in the property"
+      - name: area
+        description: "Size of the property in square meters"
+      - name: price
+        description: "Price of the property"
+      - name: district
+        description: "District number (Kerület)"
+        tests:
+          - not_null
+          - accepted_values:
+              values: [22]
+      - name: date_updated
+        description: "Date the listing was last updated"
+      - name: is_active
+        description: "Whether property is active or removed"
+        tests:
+          - accepted_values:
+              values: ["Active", "Inactive"]                                                                                    
+
+  - name: stg_ker_23_listings
+    description: "Real estate listings data for District 23 in Budapest"
+    columns:
+      - name: identifier
+        description: "Unique identifier for the listing"
+        tests:
+          - unique
+          - not_null
+      - name: room
+        description: "Number of rooms in the property"
+      - name: area
+        description: "Size of the property in square meters"
+      - name: price
+        description: "Price of the property"
+      - name: district
+        description: "District number (Kerület)"
+        tests:
+          - not_null
+          - accepted_values:
+              values: [23]
+      - name: date_updated
+        description: "Date the listing was last updated"
+      - name: is_active
+        description: "Whether property is active or removed"
+        tests:
+          - accepted_values:
+              values: ["Active", "Inactive"]

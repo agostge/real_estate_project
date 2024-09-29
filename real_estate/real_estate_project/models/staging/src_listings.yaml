@@ -1,0 +1,30 @@
+version: 2
+
+sources:
+  - name: raw_layer
+    database: real_estate_db
+    schema: bronze_listings
+    tables: 
+      - name: ker_1_listings
+      - name: ker_2_listings
+      - name: ker_3_listings
+      - name: ker_4_listings
+      - name: ker_5_listings    
+      - name: ker_6_listings
+      - name: ker_7_listings
+      - name: ker_8_listings
+      - name: ker_9_listings
+      - name: ker_10_listings
+      - name: ker_11_listings
+      - name: ker_12_listings
+      - name: ker_13_listings
+      - name: ker_14_listings
+      - name: ker_15_listings
+      - name: ker_16_listings
+      - name: ker_17_listings
+      - name: ker_18_listings
+      - name: ker_19_listings
+      - name: ker_20_listings
+      - name: ker_21_listings
+      - name: ker_22_listings
+      - name: ker_23_listings

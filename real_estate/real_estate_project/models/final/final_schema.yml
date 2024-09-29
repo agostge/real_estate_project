@@ -1,0 +1,30 @@
+version: 2
+
+models:
+  - name: final_listings
+    description: "Real estate listings data for all districts in Budapest"
+    columns:
+      - name: identifier
+        description: "Unique identifier for the listing"
+        tests:
+          - unique
+          - not_null
+      - name: room
+        description: "Number of rooms in the property"
+      - name: area
+        description: "Size of the property in square meters"
+      - name: price
+        description: "Price of the property"
+      - name: district
+        description: "District number (Kerület)"
+        tests:
+          - not_null
+          - accepted_values:
+              values: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23]
+      - name: date_updated
+        description: "Date the listing was last updated"
+      - name: is_active
+        description: "Whether property is active or removed"
+        tests:
+          - accepted_values:
+              values: ["Active", "Inactive"]
