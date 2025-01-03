@@ -13,7 +13,7 @@ For data visualization, Apache Superset is used to create dashboards powered by 
 To get this project up and running on your local machine, follow the steps outlined below. This guide assumes you have basic familiarity with Docker and Python virtual environments.
 
 
-![Flowchart Description](https://github.com/agostge/real-estate-project/real_estate/blob/main/assets/architecture.drawio.png)
+![Flowchart Description](https://github.com/agostge/real_estate_project/blob/main/real_estate/assets/architecture.drawio.png)
 
 
 ### Prerequisites
